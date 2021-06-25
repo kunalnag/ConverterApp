@@ -1,0 +1,41 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}Contact Us{% endblock %}
+{% block contactus %}
+<div class="container p-2 mt-3">
+    <div class="container bg-primary text-center text-light ">
+        <h1>Lets get connected</h1>
+    </div>
+
+    <div class="row g-5 mt-3">
+
+
+        <div class="col-sm-6">
+            <table>
+                <img src="{% static 'images/contact.svg' %}" class="img-fluid ms-auto" alt="contact">
+            </table>
+        </div>
+        <div class="col-sm-6 text-center">
+            <table>
+                {{form.as_p}}
+            </table>
+            <div class="btn btn-primary">Submit</div>
+        </div>
+
+    </div>
+
+
+
+    <!-- <br>
+    {{form.as_table}}
+    <br>
+    {{form.as_p}}
+    <br>
+    {{form.as_ul}}
+    <br>
+    {{form.name_of_field}} -->
+
+
+</div>
+{% endblock %}
+{% block footer %} {% endblock %}

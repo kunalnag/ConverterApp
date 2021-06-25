@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <!-- Custom style sheet -->
+   
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    
+    <nav class="nav navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                WebDevelopment
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'jobs' %}" class="nav-link">Job Update</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <section class="bg-dark text-light p-5 p-lg-0 p-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Hi I am <span class="text-warning">Dr. </span>Amisha Nag </h1>
+                    <p class="lead my-4">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur repudiandae
+                        asperiores enim laborum praesentium dolor, modi ipsam. Quos voluptatem dolores accusamus. Vitae
+                        adipisci, nulla voluptatum facilis nam rem.
+
+                    </p>
+                    <button class="btn btn-primary btn-lg">Start Here</button>
+                </div>
+                <div>
+
+                    <img src="{% static 'images/image.svg' %}" class="img-fluid mx-5 d-none d-sm-block" alt="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Details -->
+    <section class="bg-primary bg-gradient text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">Join The Group</h3>
+
+                <div class="input-group mb-3 contact-input">
+                    <input type="text" class="form-control" placeholder="Whatsapp Number" aria-label="Whatsapp Number"
+                        aria-describedby="button-addon2">
+                    <button class="btn btn-lg btn-dark" type="button" id="button-addon2">Button</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Boxes -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-5">
+                <div class="col-md">
+                    <div class="card bg-dark bg-gradient text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Virtual Tour
+                            </h3>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt ipsam debitis fugiat
+                                magnam perspiciatis laboriosam aliquam est illo sit!
+                            </p>
+                            <a href="#" class="btn btn-primary mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card bg-secondary bg-gradient text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Middle Tour
+                            </h3>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt ipsam debitis fugiat
+                                magnam perspiciatis laboriosam aliquam est illo sit!
+                            </p>
+                            <a href="#" class="btn btn-warning  mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="card bg-dark bg-gradient text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+
+                                <i class="bi bi-person-square"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Right Card
+                            </h3>
+                            <p class="card-text py-3">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt ipsam debitis fugiat
+                                magnam perspiciatis laboriosam aliquam est illo sit!
+                            </p>
+                            <a href="#" class="btn btn-primary mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Some more sections -->
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="{% static 'images/image1.svg' %}" alt="img data" class="img-fluid">
+                </div>
+                <div class="col-md p-5">
+                    <h2 class="">
+                        Learn More About
+                    </h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque dolores sed sapiente
+                        cum sit quam sunt rerum, repellendus amet.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nemo eum esse, quo
+                        reprehenderit consequatur totam molestias at quas eaque inventore culpa aspernatur deserunt sed
+                        minima ut? Aliquid, facilis explicabo?
+                    </p>
+                    <a href="#" class="btn btn-dark mt-3">Read More </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="learn" class="p-5 bg-dark">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-md p-5 text-light">
+                    <h2 class="">
+                        Learn More About
+                    </h2>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias itaque dolores sed sapiente
+                        cum sit quam sunt rerum, repellendus amet.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nemo eum esse, quo
+                        reprehenderit consequatur totam molestias at quas eaque inventore culpa aspernatur deserunt sed
+                        minima ut? Aliquid, facilis explicabo?
+                    </p>
+                    <a href="#" class="btn btn-warning mt-3">Read More </a>
+                </div>
+                <div class="col-md">
+                    <img src="{% static 'images/product.svg' %}" alt="img data" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="questions" class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-4">
+                Frequently Asked Questions
+            </h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- New Section for peoples -->
+    <section class="p-5 bg-primary bg-gradient" id="people">
+
+        <div class="container">
+            <h2 class="text-center text-white mb-5">
+                Our people
+            </h2>
+            <p class="lead text-center text-white mb-5">
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius beatae aliquid corporis ea eaque a
+                dolorem quibusdam in praesentium iste.
+            </p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3"
+                                alt="img">
+
+                            <h3 class="card-title mb-3">
+                                Punnet Kumar</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus.
+                            </p>
+                            <a href="#" class="">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/13.jpg" class="rounded-circle mb-3"
+                                alt="img">
+
+                            <h3 class="card-title mb-3">
+                                Reea shin</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus.
+                            </p>
+                            <a href="#" class="">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/18.jpg" class="rounded-circle mb-3"
+                                alt="img">
+
+                            <h3 class="card-title mb-3">
+                                Simran Kour</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus.
+                            </p>
+                            <a href="#" class="">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/71.jpg" class="rounded-circle mb-3"
+                                alt="img">
+
+                            <h3 class="card-title mb-3">
+                                Govind Sharma
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus.
+                            </p>
+                            <a href="#">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact us -->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Info</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Location: </span>B.H Area kadma st Boad
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Phone: </span> 7979862235
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Email: </span> kunalnag99@gmail.com
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-md text-center">
+                    <h2 class="fw-bold ">
+
+                        Map goes here
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Teamkunal</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </section>
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

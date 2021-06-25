@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block navbar %}
+<body>
+  
+  <nav class="nav navbar bg-dark navbar-dark py-3 fixed-top">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand p-1">
+        X - to - Y
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu1" aria-controls="navmenu1" aria-expanded="false" aria-label="Toggle Navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navmenu1" class="collapse navbar-collapse" >
+      <div id="navmenu1"  >
+
+
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'jobs' %}" class="nav-link">Update</a> 
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'showcontact' %}" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+         
+
+        </ul>
+
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+             <a href="#" class="nav-link ">Projects</a> 
+          </li>
+         
+          <li class="nav-item">
+            <a href="#" class="nav-link btn btn-md text-light btn-outline-warning d-inline">Download</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav> 
+
+
+
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+
+
+{% endblock %}
